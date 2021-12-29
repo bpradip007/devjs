@@ -16,8 +16,7 @@ steps:
    - '--region'
    - 'ap-south1'
    - '--platform'
-   - 'managed'
-  - name: gcr.io/cloud-builders/gcloud
+ - name: gcr.io/cloud-builders/gcloud
     args: [ compute, instance-groups, managed, rolling-action, restart, ig-poc-jssample, --zone=ap-south1 ]
 
  images:
