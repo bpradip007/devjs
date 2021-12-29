@@ -19,4 +19,4 @@ steps:
  - name: gcr.io/cloud-builders/gcloud
    args: [ 'compute', 'instance-groups', 'managed', 'rolling-action', 'restart', 'ig-poc-jssample', '--region=ap-south1' ]
  images:
-   - 'gcr.io/niveus-research-project/sampleapp:$COMMIT_SHA'
+   'gcr.io/niveus-research-project/sampleapp:$COMMIT_SHA'
