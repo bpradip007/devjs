@@ -1,3 +1,7 @@
 steps:
- - name: gcr.io/cloud-builders/gcloud
-   args: ['beta' 'compute', 'instance-groups', 'managed', 'rolling-action', 'restart', 'ig-poc-jssample', '--zone=asia-south1-a']
+- name: gcr.io/cloud-builders/gcloud
+   entrypoint: 'bash'
+   args:
+   - '-c'
+   - |
+     gcloud compute instance-groups managed rolling-action restart ig-poc-jssample --zone=asia-south1-a
