@@ -4,4 +4,4 @@ steps:
   args:
   - '-c'
   - |
-    gcloud compute instance-groups managed rolling-action restart ig-poc-jssample --zone=asia-south1-a
+    gcloud compute instance-groups managed rolling-action restart mig-poc-custome-0sv1 --zone=asia-south1-a
